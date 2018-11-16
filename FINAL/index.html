@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> FORTUNE TELLER </title>
+  <link rel="stylesheet" href="quiz.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <script src="quiz.js"></script>
+</head>
+<body>
+  <h1> THE ULTIMATE FORTUNE TELLER </h1>
+    <h3> (it's better than your palm) </h3>
+      <p> Okay, so temporarily forget all those palm readers out there who ask for like two
+        bucks every time they read your palm… just take this FREE quiz right now (and
+        find a palm reader to verify later)!</p>
+  <form>
+    <p class="question"> 1. How tall are you? </p>
+    <img src="height.jpg" alt="heightdifference" width="200" style=display:block;> <!--https://www.cartoonstock.com/directory/h/height_difference.asp-->
+      <input type="radio" onclick="clearFortunte();" name="height" value="Sometimes you feel like you're related to Grumpy, Sleepy, and Sneezy from Snow White." id="height1"/> under 5' <br>
+      <input type="radio" onclick="clearFortunte();" name="height" value="You probably no longer play volleyball" id="height2"/> under 5'4" <br/>
+      <input type="radio" onclick="clearFortunte();" name="height" value="You greet people straight in the eye" id="height3"/> under 5'10" <br>
+      <input type="radio" onclick="clearFortunte();" name="height" value="You see the tops of people's heads" id="height4"/>  under 6'2" <br>
+      <input type="radio" onclick="clearFortunte();" name="height" value="Hiya, seeing you all from the top of the world, is probably how you usually feel when you walk down a street." id="height5"/>  over 6'2" <br>
+      <br><br>
+    <p class="question"> 2. What time do you wake up on the weekends? </p>
+    <img src="wake.gif" alt="wakeupgif" width="400" style=display:block;><br> <!--https://gifer.com/en/4LdL-->
+      <input type="radio" onclick="clearFortunte();" name="time" value="Based on when you wake up, you're always grinding" id="early"> before 8 AM <br>
+      <input type="radio" onclick="clearFortunte();" name="time" value="You're a reasonable person. You work hard during the week, become sleep deprived and then allow yourself to sleep in on the weekends." id="normal"> before 11 AM; <br>
+      <input type="radio" onclick="clearFortunte();" name="time" value="dude, I'm checking out try to stop me; probably a line you tell most people every weekend. You like to sleep and you tend to need a lot of it." id="late">  after 11 AM <br>
+      <br><br>
+    <p class="question"> 3. If you were an element, what would you be? </p>
+    <img src="element.jpg" alt="elementpic" width="400" style=display:block;><br> <!--http://avatarlok.blogspot.com/2012/06/what-element-would-you-bend.html-->
+      <input type="radio" onclick="clearFortunte();" name="element" value="You're grounded and caring for others based on your selection of Earth." id="element1"> Earth <br>
+      <input type="radio" onclick="clearFortunte();" name="element" value="You're swell and you like to go with the flow. Your water sign runs deep through your roots and it guides you to make wise decisions daily." id="element2">  Water <br>
+      <input type="radio" onclick="clearFortunte();" name="element" value="You're the life of the party and you bring happiness, determination, and enthusiasm everywhere you go. Your fire spirit burns inside you and it drives you to live with integrity and grit." id="element3"> Fire <br>
+      <input type="radio" onclick="clearFortunte();" name="element" value="You're an oddball but you're directional and curious. The wind blows through you, and it drives you to blow your spirit on all those you encounter" id="element4" > Windy <br>
+      <br><br>
+    <p class="question"> 4. How much do you tip your waiter? </p>
+    <img src="tipping.gif" alt="tippinggif" width="400" style=display:block;> <!--https://giphy.com/gifs/tom-cruise-80s-movies-cocktail-bqX88czvQJhkI-->
+    <p> (she would probably not be getting my tip) </p><br>
+      <input type="radio" onclick="clearFortunte();" name="tip" value="You're tough and set high expectations for yourself and everyone around you. Occasionally you will be more generous"
+      id="tip10"> usually 10% <br>
+      <input type="radio" onclick="clearFortunte();" name="tip" value="You tend to do the usual. You believe in what society has already established and you're fairly conventional" id="tip15">
+      usually 15% <br>
+      <input type="radio" onclick="clearFortunte();" name="tip" value="You're very generous. You empathize with other people and you try not to give people a hard time. People like hanging out with you for your outgoing persona." id="tip18"> usually 18% <br>
+      <input type="radio" onclick="clearFortunte();" name="tip" value="Wow, you're very generous. You have a big heart and you set high expectations for yourself." id="tip20"> usually 20% <br>
+      <br><br>
+    <p class="question"> 5. Do you like pets? </p>
+    <img src="pets.jpg" alt="hedgehoggif" width="400" style=display:block;><br> <!--https://imgur.com/gallery/8Mr20-->
+    <p> (not exclusive to cats and dogs) </p>
+      <input type="radio" onclick="clearFortunte();" name="pets" value="Yes! You love your non-human friends! You have a big heart and you are responsible. You like protecting the things you love and pets are definitely on that list!" id="yespets"> yes <br>
+      <input type="radio" onclick="clearFortunte();" name="pets" value="You like a clean house. You are probably very busy and don't want to diverge your time towards other animals. You may be touched by animals when you see them outdoors, but having one inside your house is beyond your ideals." id="nopets"> no <br>
+      <br><br>
+    <button type="button" value="submit" onclick="submitForms()"> Submit! </button>
+  </form>
+  <p id="fortune" style="display:none"></p>
+</body>
+</html>
